@@ -1,0 +1,6 @@
+C:\Users\Gustavo\Desktop\CuentaDigital\CuentaDigital\CuentaDigital\bin\CuentaDigital.dll.config
+C:\Users\Gustavo\Desktop\CuentaDigital\CuentaDigital\CuentaDigital\bin\CuentaDigital.dll
+C:\Users\Gustavo\Desktop\CuentaDigital\CuentaDigital\CuentaDigital\bin\CuentaDigital.pdb
+C:\Users\Gustavo\Desktop\CuentaDigital\CuentaDigital\CuentaDigital\obj\Debug\CuentaDigital.csprojResolveAssemblyReference.cache
+C:\Users\Gustavo\Desktop\CuentaDigital\CuentaDigital\CuentaDigital\obj\Debug\CuentaDigital.dll
+C:\Users\Gustavo\Desktop\CuentaDigital\CuentaDigital\CuentaDigital\obj\Debug\CuentaDigital.pdb
