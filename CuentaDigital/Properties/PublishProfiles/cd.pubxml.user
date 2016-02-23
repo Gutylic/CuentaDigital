@@ -10,7 +10,10 @@ editando este archivo MSBuild. Para conocer más acerca de esto, visite http://g
   </PropertyGroup>
   <ItemGroup>
     <File Include="bin/CuentaDigital.dll">
-      <publishTime>02/22/2016 02:59:10</publishTime>
+      <publishTime>02/23/2016 00:54:36</publishTime>
+    </File>
+    <File Include="CDigital.aspx">
+      <publishTime>02/23/2016 02:12:44</publishTime>
     </File>
     <File Include="Index.aspx">
       <publishTime>02/22/2016 02:10:52</publishTime>

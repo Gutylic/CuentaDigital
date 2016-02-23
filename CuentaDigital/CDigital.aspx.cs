@@ -45,11 +45,11 @@ namespace CuentaDigital
 
             string[] dato = fecha.Split('/');
 
-            if (File.Exists("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml")){ // ya se encuentra en el disco c y analiza su contenido
+            if (File.Exists(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml"))){ // ya se encuentra en el disco c y analiza su contenido
 
                 
                 
-                xDoc.Load("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml"); // leer el XML total que hay en el dico
+                xDoc.Load(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml")); // leer el XML total que hay en el dico
 
                 XmlNodeList pagos = xDoc.GetElementsByTagName("pagos");
 
@@ -117,11 +117,11 @@ namespace CuentaDigital
 
                 }
 
-                xml.Save("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml"); // carga pisando el nuevo xml
+                xml.Save(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml")); // carga pisando el nuevo xml
 
 
 
-                xDoc.Load("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml"); // leer el XML total que hay en el dico
+                xDoc.Load(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml")); // leer el XML total que hay en el dico
 
                 pagos = xDoc.GetElementsByTagName("pagos");
 
@@ -169,7 +169,7 @@ namespace CuentaDigital
 
                     }
 
-                    xmla.Save("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + ".xml"); // aca termina con el nombre fecha.xml
+                    xmla.Save(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + ".xml")); // aca termina con el nombre fecha.xml
 
                     j = 0;
                     MailMessage correo = new MailMessage();
@@ -207,7 +207,7 @@ namespace CuentaDigital
                 }
                 else { // no se agrego nada
 
-                    File.Delete("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + ".xml");
+                    File.Delete(Server.MapPath("pagos/cuentadigital" + dato[2] + dato[1] + dato[0] + ".xml"));
                 
                 }
 
@@ -277,10 +277,10 @@ namespace CuentaDigital
 
                 }
 
-                xml.Save("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + ".xml");
+                xml.Save(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + ".xml"));
 
 
-                xml.Save("c:/pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml");
+                xml.Save(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml"));
 
                 
 

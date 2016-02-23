@@ -60,7 +60,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="CDigital.aspx" />
-    <Content Include="Index.aspx" />
     <Content Include="pagos\cuentadigital\StyleSheet1.css" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -71,13 +70,6 @@
     </Compile>
     <Compile Include="CDigital.aspx.designer.cs">
       <DependentUpon>CDigital.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Index.aspx.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Index.aspx.designer.cs">
-      <DependentUpon>Index.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
