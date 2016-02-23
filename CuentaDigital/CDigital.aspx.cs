@@ -46,9 +46,7 @@ namespace CuentaDigital
             string[] dato = fecha.Split('/');
 
             if (File.Exists(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml"))){ // ya se encuentra en el disco c y analiza su contenido
-
-                
-                
+                              
                 xDoc.Load(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + "total.xml")); // leer el XML total que hay en el dico
 
                 XmlNodeList pagos = xDoc.GetElementsByTagName("pagos");
@@ -64,10 +62,7 @@ namespace CuentaDigital
                     Session["Comparar_Viejo"] = iIdentidad[i++].InnerText; // carga la identidad del ultimo
 
                 }
-
-
-
-
+                
                 List<string> nuevaLista = new List<string>(); // crear un nuevo xml en el disco
 
                 nuevaLista.Add("fecha");
@@ -207,7 +202,7 @@ namespace CuentaDigital
                 }
                 else { // no se agrego nada
 
-                    File.Delete(Server.MapPath("pagos/cuentadigital" + dato[2] + dato[1] + dato[0] + ".xml"));
+                    File.Delete(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + ".xml"));
                 
                 }
 
@@ -323,6 +318,22 @@ namespace CuentaDigital
             ScriptManager.RegisterStartupScript(this, typeof(Page), "", alerta1, false);
 
             return;
+        }
+
+        protected void Button2_Click(object sender, EventArgs e)
+        {
+
+            if (TextBox1.Text != "M@rtiv@")
+            {
+                return;
+            }
+
+            //cargar la fecha y armar el nombre
+            string fecha = Calendario.SelectedDate.ToShortDateString();
+
+            string[] dato = fecha.Split('/');
+
+            File.Delete(Server.MapPath("pagos/cuentadigital/" + dato[2] + dato[1] + dato[0] + ".xml"));
         }
     }
 }

@@ -54,8 +54,12 @@
 
             <div class="row">
                 
-                <div class="col-xs-12">
+                <div class="col-xs-6">
                     <asp:Button ID="Button1" runat="server" Text="Actualizar Pago" OnClick="Button1_Click" CssClass="btn btn-primary" Width="100%"  />
+                </div>
+
+                <div class="col-xs-6">
+                    <asp:Button ID="Button2" runat="server" Text="Borrar Pago" CssClass="btn btn-danger" Width="100%" OnClick="Button2_Click"  />
                 </div>
                 
             </div>
