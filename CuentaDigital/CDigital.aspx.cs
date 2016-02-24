@@ -75,7 +75,8 @@ namespace CuentaDigital
                 XElement xml = new XElement("pagos");
                 XElement xmla = new XElement("pagos");
 
-                string url = "https://www.cuentadigital.com/exportacionsandbox.php?control=2b4153d8728a8c0f90b0a5a43db87507&fecha=" + dato[2] + dato[1] + dato[0];
+                //string url = "https://www.cuentadigital.com/exportacionsandbox.php?control=2b4153d8728a8c0f90b0a5a43db87507&fecha=" + dato[2] + dato[1] + dato[0];
+                string url = "https://www.cuentadigital.com/exportacion.php?control=2b4153d8728a8c0f90b0a5a43db87507&fecha=" + dato[2] + dato[1] + dato[0];
 
                 HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
 
@@ -225,7 +226,9 @@ namespace CuentaDigital
 
                 XElement xml = new XElement("pagos");
 
-                string url = "https://www.cuentadigital.com/exportacionsandbox.php?control=2b4153d8728a8c0f90b0a5a43db87507&fecha=" + dato[2] + dato[1] + dato[0];
+                //string url = "https://www.cuentadigital.com/exportacionsandbox.php?control=2b4153d8728a8c0f90b0a5a43db87507&fecha=" + dato[2] + dato[1] + dato[0];
+                string url = "https://www.cuentadigital.com/exportacion.php?control=2b4153d8728a8c0f90b0a5a43db87507&fecha=" + dato[2] + dato[1] + dato[0];
+
 
                 HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
 
