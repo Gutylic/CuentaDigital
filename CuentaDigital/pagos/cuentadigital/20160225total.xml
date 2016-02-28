@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<pagos>
+  <pago>
+    <fecha>25022016</fecha>
+    <monto_bruto>6,000</monto_bruto>
+    <comision>1,800</comision>
+    <usuario>000000000</usuario>
+    <tipo_pago>RapiPago</tipo_pago>
+    <identidad>1</identidad>
+  </pago>
+</pagos>

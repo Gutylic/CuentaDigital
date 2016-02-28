@@ -150,6 +150,8 @@ namespace CuentaDigital
 
 
                         string[] subcadena = ep.Split('|');
+                        subcadena[1] = subcadena[1].Replace(",", ".");
+                        subcadena[2] = subcadena[2].Replace(",", ".");
                         int pos = 0;
 
                         foreach (string es in subcadena)
@@ -261,13 +263,24 @@ namespace CuentaDigital
 
                     XElement pago = new XElement("pago");
                     string[] subcadena = ep.Split('|');
+                    subcadena[1] = subcadena[1].Replace(",", ".");
+                    subcadena[2] = subcadena[2].Replace(",", ".");
                     int pos = 0;
 
                     foreach (string es in subcadena)
                     {
+                        
+
                         XElement etiqueta_secundaria = new XElement(string.Format(nuevaLista[pos]));
+                       
+                        if (pos == 1)
+                        {
+                            
+                        }
                         etiqueta_secundaria.Add(es);
+                        
                         pago.Add(etiqueta_secundaria);
+
                         pos += 1;
                     }
 
